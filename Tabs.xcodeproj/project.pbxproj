@@ -14,7 +14,7 @@
 		3D900EA3215B065700FA9A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D900EA1215B065700FA9A5A /* LaunchScreen.storyboard */; };
 		3D900EAE215B065700FA9A5A /* TabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D900EAD215B065700FA9A5A /* TabsTests.swift */; };
 		3D900EB9215B065700FA9A5A /* TabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D900EB8215B065700FA9A5A /* TabsUITests.swift */; };
-		3D900EC9215B1B3300FA9A5A /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D900EC8215B1B3300FA9A5A /* Places.swift */; };
+		3D900EC9215B1B3300FA9A5A /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D900EC8215B1B3300FA9A5A /* Lugar.swift */; };
 		3D900ECB215B1B7900FA9A5A /* CeldaLugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D900ECA215B1B7900FA9A5A /* CeldaLugar.swift */; };
 		3D900ECD215B1B8E00FA9A5A /* DetalleLugarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D900ECC215B1B8E00FA9A5A /* DetalleLugarController.swift */; };
 /* End PBXBuildFile section */
@@ -50,7 +50,7 @@
 		3D900EB4215B065700FA9A5A /* TabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D900EB8215B065700FA9A5A /* TabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsUITests.swift; sourceTree = "<group>"; };
 		3D900EBA215B065700FA9A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D900EC8215B1B3300FA9A5A /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		3D900EC8215B1B3300FA9A5A /* Lugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
 		3D900ECA215B1B7900FA9A5A /* CeldaLugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaLugar.swift; sourceTree = "<group>"; };
 		3D900ECC215B1B8E00FA9A5A /* DetalleLugarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleLugarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,12 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D1A7119215BEBF300D7DC73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D900EA1215B065700FA9A5A /* LaunchScreen.storyboard */,
+				3D900E9C215B065400FA9A5A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3D900E8C215B065400FA9A5A = {
 			isa = PBXGroup;
 			children = (
+				3D1A7119215BEBF300D7DC73 /* View */,
 				3D900EC7215B1A0800FA9A5A /* Models */,
 				3D900EC6215B19F500FA9A5A /* ViewControllers */,
-				3D900E97215B065400FA9A5A /* Tabs */,
+				3D900E97215B065400FA9A5A /* Tabs Proyecto */,
 				3D900EAC215B065700FA9A5A /* TabsTests */,
 				3D900EB7215B065700FA9A5A /* TabsUITests */,
 				3D900E96215B065400FA9A5A /* Products */,
@@ -102,16 +112,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3D900E97215B065400FA9A5A /* Tabs */ = {
+		3D900E97215B065400FA9A5A /* Tabs Proyecto */ = {
 			isa = PBXGroup;
 			children = (
 				3D900E98215B065400FA9A5A /* AppDelegate.swift */,
-				3D900E9C215B065400FA9A5A /* Main.storyboard */,
 				3D900E9F215B065700FA9A5A /* Assets.xcassets */,
-				3D900EA1215B065700FA9A5A /* LaunchScreen.storyboard */,
 				3D900EA4215B065700FA9A5A /* Info.plist */,
 			);
-			path = Tabs;
+			path = "Tabs Proyecto";
 			sourceTree = "<group>";
 		};
 		3D900EAC215B065700FA9A5A /* TabsTests */ = {
@@ -145,7 +153,7 @@
 		3D900EC7215B1A0800FA9A5A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3D900EC8215B1B3300FA9A5A /* Places.swift */,
+				3D900EC8215B1B3300FA9A5A /* Lugar.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -283,7 +291,7 @@
 			files = (
 				3D900E9B215B065400FA9A5A /* ViewController.swift in Sources */,
 				3D900E99215B065400FA9A5A /* AppDelegate.swift in Sources */,
-				3D900EC9215B1B3300FA9A5A /* Places.swift in Sources */,
+				3D900EC9215B1B3300FA9A5A /* Lugar.swift in Sources */,
 				3D900ECD215B1B8E00FA9A5A /* DetalleLugarController.swift in Sources */,
 				3D900ECB215B1B7900FA9A5A /* CeldaLugar.swift in Sources */,
 			);

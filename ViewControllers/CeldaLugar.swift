@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+
+
+class CeldaLugar: UITableViewCell{
+    
+    
+    
+    @IBOutlet weak var lblNombre: UILabel!
+    @IBOutlet weak var imgLugar: UIImageView!
+    @IBOutlet weak var viewNegroOpaco: UIView!
+    
+}
