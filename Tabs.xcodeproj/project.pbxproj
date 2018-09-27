@@ -95,7 +95,7 @@
 				3D1A7119215BEBF300D7DC73 /* View */,
 				3D900EC7215B1A0800FA9A5A /* Models */,
 				3D900EC6215B19F500FA9A5A /* ViewControllers */,
-				3D900E97215B065400FA9A5A /* Tabs Proyecto */,
+				3D900E97215B065400FA9A5A /* Tabs */,
 				3D900EAC215B065700FA9A5A /* TabsTests */,
 				3D900EB7215B065700FA9A5A /* TabsUITests */,
 				3D900E96215B065400FA9A5A /* Products */,
@@ -112,14 +112,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3D900E97215B065400FA9A5A /* Tabs Proyecto */ = {
+		3D900E97215B065400FA9A5A /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
 				3D900E98215B065400FA9A5A /* AppDelegate.swift */,
 				3D900E9F215B065700FA9A5A /* Assets.xcassets */,
 				3D900EA4215B065700FA9A5A /* Info.plist */,
 			);
-			path = "Tabs Proyecto";
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 		3D900EAC215B065700FA9A5A /* TabsTests */ = {

@@ -13,19 +13,22 @@ class Lugar {
     
     var nombre : String
     var descripcion : String
-    var imagen : UIImage
+    var imagenLista : UIImage
+    var imagenDetalle : UIImage
     
     init() {
         nombre = ""
         descripcion = ""
-        imagen = UIImage()
+        imagenLista = UIImage()
+        imagenDetalle = UIImage()
     }
     
-    init(nombre : String, descripcion : String, imagen : UIImage)
+    init(nombre : String, descripcion : String, imagenLista : UIImage, imagenDetalle : UIImage)
     {
         self.nombre = nombre
         self.descripcion = descripcion
-        self.imagen = imagen
+        self.imagenLista = imagenLista
+        self.imagenDetalle = imagenDetalle
         
         
     }

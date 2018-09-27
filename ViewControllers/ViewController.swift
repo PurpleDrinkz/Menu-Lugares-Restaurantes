@@ -12,14 +12,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     
-    let lugares : [Lugar] = [Lugar(nombre: "The Strip", descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut lobortis ipsum. Quisque vitae auctor sem. Sed et iaculis mi. Morbi faucibus, elit sed consequat gravida, elit tortor laoreet mauris, non scelerisque odio ante ac nisl. Nullam vulputate ornare leo at tempor. ", imagen : UIImage(named: "strip")!)]
+    let lugares : [Lugar] = [Lugar(nombre: "The Strip", descripcion: "dfg", imagenLista : UIImage(named: "strip")!, imagenDetalle : UIImage(named: "strip")!),
+                             Lugar(nombre: "Stratosphere", descripcion: "dfg", imagenLista : UIImage(named: "stratosphere")!, imagenDetalle : UIImage(named: "strip")!),
+                             Lugar(nombre: "Fremont Street", descripcion: "dfg", imagenLista : UIImage(named: "fremont")!,imagenDetalle : UIImage(named: "strip")!),
+                             Lugar(nombre: "Venetian Hotel", descripcion: "dfg", imagenLista : UIImage(named: "venetian")!, imagenDetalle : UIImage(named: "strip")!),
+                             Lugar(nombre: "Bellagio Fountains", descripcion: "dfg", imagenLista : UIImage(named: "bellagio")!, imagenDetalle : UIImage(named: "strip")!)]
                             
     
     
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-                                    return lugares.count
+        return lugares.count
     }
                                 
                                 
@@ -27,27 +31,44 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let celda = tableView.dequeueReusableCell(withIdentifier: "cellLugar") as? CeldaLugar
         celda?.lblNombre.text = lugares[indexPath.row].nombre
         
+        celda?.imgLugar.image = lugares[indexPath.row].imagenLista
+        
         return celda!
     }
     
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 93
+        return 124.5
     }
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.title = "Places"
+        
+        
+        
     }
-
+    
+    
+    
+    @IBOutlet weak var tbLugares: UITableView!
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToDetalleLugar"{
+            let destino = segue.destination as? DetalleLugarController
+            
+            destino?.lugar = lugares[(tbLugares.indexPathForSelectedRow?.row)!]
+            
+        }
+    }
 
 }
 
