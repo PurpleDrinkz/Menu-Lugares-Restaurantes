@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D7A52F7216D82C600537F8B /* Restaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A52F6216D82C600537F8B /* Restaurante.swift */; };
+		3D7A52F9216D8B8500537F8B /* CeldaRestaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A52F8216D8B8500537F8B /* CeldaRestaurante.swift */; };
+		3D7A52FB216D8C4800537F8B /* DetalleRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A52FA216D8C4800537F8B /* DetalleRestaurantController.swift */; };
+		3D7A52FF216E506F00537F8B /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A52FE216E506F00537F8B /* ViewController2.swift */; };
+		3D7A5302216E5CA400537F8B /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A5301216E5CA400537F8B /* Comentario.swift */; };
+		3D7A5306216E5CE200537F8B /* ListaComentarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A5305216E5CE200537F8B /* ListaComentarioController.swift */; };
+		3D7A5308216E5D0200537F8B /* CeldaComentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A5307216E5D0200537F8B /* CeldaComentario.swift */; };
+		3D7A530C216E5FA700537F8B /* ViewControllerComentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A530B216E5FA700537F8B /* ViewControllerComentario.swift */; };
 		3D900E99215B065400FA9A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D900E98215B065400FA9A5A /* AppDelegate.swift */; };
 		3D900E9B215B065400FA9A5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D900E9A215B065400FA9A5A /* ViewController.swift */; };
 		3D900E9E215B065400FA9A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D900E9C215B065400FA9A5A /* Main.storyboard */; };
@@ -37,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D7A52F6216D82C600537F8B /* Restaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurante.swift; sourceTree = "<group>"; };
+		3D7A52F8216D8B8500537F8B /* CeldaRestaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaRestaurante.swift; sourceTree = "<group>"; };
+		3D7A52FA216D8C4800537F8B /* DetalleRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleRestaurantController.swift; sourceTree = "<group>"; };
+		3D7A52FE216E506F00537F8B /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		3D7A5301216E5CA400537F8B /* Comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
+		3D7A5305216E5CE200537F8B /* ListaComentarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaComentarioController.swift; sourceTree = "<group>"; };
+		3D7A5307216E5D0200537F8B /* CeldaComentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaComentario.swift; sourceTree = "<group>"; };
+		3D7A530B216E5FA700537F8B /* ViewControllerComentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerComentario.swift; sourceTree = "<group>"; };
 		3D900E95215B065400FA9A5A /* Tabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D900E98215B065400FA9A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D900E9A215B065400FA9A5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +103,26 @@
 				3D900E9C215B065400FA9A5A /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3D7A5309216E5D0E00537F8B /* Detalles */ = {
+			isa = PBXGroup;
+			children = (
+				3D7A5305216E5CE200537F8B /* ListaComentarioController.swift */,
+				3D900ECC215B1B8E00FA9A5A /* DetalleLugarController.swift */,
+				3D7A52FA216D8C4800537F8B /* DetalleRestaurantController.swift */,
+			);
+			path = Detalles;
+			sourceTree = "<group>";
+		};
+		3D7A530A216E5D6D00537F8B /* Celdas */ = {
+			isa = PBXGroup;
+			children = (
+				3D900ECA215B1B7900FA9A5A /* CeldaLugar.swift */,
+				3D7A52F8216D8B8500537F8B /* CeldaRestaurante.swift */,
+				3D7A5307216E5D0200537F8B /* CeldaComentario.swift */,
+			);
+			path = Celdas;
 			sourceTree = "<group>";
 		};
 		3D900E8C215B065400FA9A5A = {
@@ -144,8 +180,10 @@
 			isa = PBXGroup;
 			children = (
 				3D900E9A215B065400FA9A5A /* ViewController.swift */,
-				3D900ECA215B1B7900FA9A5A /* CeldaLugar.swift */,
-				3D900ECC215B1B8E00FA9A5A /* DetalleLugarController.swift */,
+				3D7A52FE216E506F00537F8B /* ViewController2.swift */,
+				3D7A530B216E5FA700537F8B /* ViewControllerComentario.swift */,
+				3D7A530A216E5D6D00537F8B /* Celdas */,
+				3D7A5309216E5D0E00537F8B /* Detalles */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -154,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				3D900EC8215B1B3300FA9A5A /* Lugar.swift */,
+				3D7A52F6216D82C600537F8B /* Restaurante.swift */,
+				3D7A5301216E5CA400537F8B /* Comentario.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,7 +331,15 @@
 			files = (
 				3D900E9B215B065400FA9A5A /* ViewController.swift in Sources */,
 				3D900E99215B065400FA9A5A /* AppDelegate.swift in Sources */,
+				3D7A52FF216E506F00537F8B /* ViewController2.swift in Sources */,
+				3D7A52F7216D82C600537F8B /* Restaurante.swift in Sources */,
+				3D7A5302216E5CA400537F8B /* Comentario.swift in Sources */,
+				3D7A5306216E5CE200537F8B /* ListaComentarioController.swift in Sources */,
+				3D7A5308216E5D0200537F8B /* CeldaComentario.swift in Sources */,
+				3D7A530C216E5FA700537F8B /* ViewControllerComentario.swift in Sources */,
 				3D900EC9215B1B3300FA9A5A /* Lugar.swift in Sources */,
+				3D7A52FB216D8C4800537F8B /* DetalleRestaurantController.swift in Sources */,
+				3D7A52F9216D8B8500537F8B /* CeldaRestaurante.swift in Sources */,
 				3D900ECD215B1B8E00FA9A5A /* DetalleLugarController.swift in Sources */,
 				3D900ECB215B1B7900FA9A5A /* CeldaLugar.swift in Sources */,
 			);

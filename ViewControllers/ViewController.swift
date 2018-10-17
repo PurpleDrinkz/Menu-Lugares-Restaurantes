@@ -17,13 +17,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                              Lugar(nombre: "Fremont Street", descripcion: "dfg", imagenLista : UIImage(named: "fremont")!,imagenDetalle : UIImage(named: "strip")!),
                              Lugar(nombre: "Venetian Hotel", descripcion: "dfg", imagenLista : UIImage(named: "venetian")!, imagenDetalle : UIImage(named: "strip")!),
                              Lugar(nombre: "Bellagio Fountains", descripcion: "dfg", imagenLista : UIImage(named: "bellagio")!, imagenDetalle : UIImage(named: "strip")!)]
-                            
-    
     
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lugares.count
+        
     }
                                 
                                 
@@ -36,17 +35,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return celda!
     }
     
-
+    //Aqui se establece el tamaño de las celdas
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 124.5
+        
     }
     
+    //Aquí se establece el titulo del table view
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         self.title = "Places"
-        
         
         
     }
@@ -61,6 +61,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
 
+    
+    //Prepare for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToDetalleLugar"{
             let destino = segue.destination as? DetalleLugarController
